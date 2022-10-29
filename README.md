@@ -1,38 +1,80 @@
-# Phase 3 - Intro to Solana Web3 Development
+# Doge academy -  Phase 3 - Task 1
 
-In this phase the focus will be on understanding basic concepts in solana development and getting familiar with some of the most frequently used packages.
+## Task 1 - Intro to Solana Web3 Development
+
+## Goal
+The goal of this task is to get familiarized with the most basic Solana development concepts, specifically the Solana account model and SPL token program.
+
+## Core learnings
+- Solana account model
+- Solana transactions
+- Solana token program
+
+## Development and Enviroment Requirements
 
 ## Note-
 * We will be using __DEVNET__ throughout this guide.
-* If you are not able to access any of the links, try using an incognito window.
+On __CLI__ this can be set using the following:
+```
+solana config set --url https://api.devnet.solana.com
+```
 
-## 1-
-Read upon and understand about the [account structure](https://medium.com/@lianxiongdi/a-deep-dive-into-solana-account-model-1-introduction-7b0408656593) of solana blockchain. Also explore the [solana cookbook](https://solanacookbook.com/#contributing), it provides a lot of info which you will find handy.
-
-## 2-
-Using CLI perform the following-
-* Create a [file wallet](https://medium.com/@lianxiongdi/solana-development-1-basic-operation-of-solana-cli-dcf156137e6).
-* Airdrop yourself Sol.
-* Create a [spl-token](https://medium.com/@lianxiongdi/a-deep-dive-into-solana-account-model-2-spl-token-d029d97aa6e0).
-* Create [associated-token-account](https://medium.com/@lianxiongdi/a-deep-dive-into-solana-account-model-3-associated-token-account-60a7655bec03) for the token you created.
-* Transfer some sol and token to a second wallet.
-
-## Try answering the following questions
-* Difference between public and private key.
-* What is a transaction, instruction in solana and how are they related?
-* How does ATA’s differ from token accounts?
+On __Phantom__ wallet.
+1. Go to the wallet settings
+2. Go to 'Change Network'
+3. Select Devnet
 
 
-## 3-
-**For this week the task is to create a `nodejs` project which is to be submitted.**
-In the project create a `new transaction`.
-For the project make use of `keypair` from a file wallet you have made.
+## 1- Create file wallet
+___Required reading:__ [File System Wallet] (https://docs.solana.com/wallet-guide/file-system-wallet)
+__Tasks:__
+1. Use the Solana CLI to create a file wallet.
+__Bonus:__
+1.Import the file wallet to Phantom wallet.
+ 
+## 2- Airdrop Solana to wallet
+__Required reading:__
+1. [Send and Recieve Tokens] (https://docs.solana.com/cli/transfer-tokens)
+__Tasks:__ 
+1. Use the Solana CLI to airdrop yourself 1 SOL to your file wallet.
+2. Familiarize yourself with a transaction explorer. Track your airdrop transaction using [Solana explorer](https://explorer.solana.com/) or [SolanaFM](https://solana.fm/)
 
-## 4-
-Add `instructions` to perform the following to the `transaction` you created-
+## 3- Solana account and Javascript
+__Required reading:__
+ 1. [Solana account model] (https://docs.solana.com/developing/programming-model/accounts)
+ 2. [Solana account model - Solana Cookbook] (https://solanacookbook.com/core-concepts/accounts.html#account-model)
+ 3. [Solana Javascript API] (https://docs.solana.com/developing/clients/javascript-api#connecting-to-a-wallet)
+ __Tasks:__
+ 1. Create a web app(NextJS recommended)
+ 2. Using the Solana Javascript API connect to your file wallet.
+ 3. Inspect the KeyPair datastructure.
+ 4. Compare the contents to the phantom wallet UI
 
-* Send 0.1 sol to the given wallet.
-* Create ATA for any one token you have created for this wallet.
-* Transfer 0.1 of that token to the wallet.
+ ## 3- Solana token program
+__Required reading:__
+ 1. [Solana Token Program] (https://spl.solana.com/token)
+ 2. [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
+ __Tasks:__
+ 1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
+ Note: The SPL token can be created using the CLI too, but we want to do this programatically.
+ 2. Create new wallet, this can be used phantom or it can be another file wallet.
+ 2. Create a transaction to transfer some of your SPL tokens to your new wallet.
+ 3. Check the new wallet on phantom. You should see your SPL token balance.
+ 4. Track your airdrop transaction using [Solana explorer](https://explorer.solana.com/) or [SolanaFM](https://solana.fm/)
+ 5. Extend your web app to airdrop some SPL tokens to a wallet given by the user. 
+ Note: this can be done without connecting the actual wallet, remember Airdrop not claim
+ 6. Familiarize yourself with a transaction explorer. Track your airdrop transaction using [Solana explorer](https://explorer.solana.com/) or [SolanaFM](https://solana.fm/)
 
-Wallet : `HtUaVzWiSNrrY2NSVKroE3883vnBfn8SMrLM2UxA2vDy`
+ ## 3- Solana token program
+__Required reading:__
+ 1. [Solana Token Program] (https://spl.solana.com/token)
+ 2. [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
+ __Tasks:__
+ 1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
+ Note: The SPL token can be created using the CLI too, but we want to do this programatically.
+ 2. Create new wallet, this can be used phantom or it can be another file wallet.
+ 2. Create a transaction to transfer some of your SPL tokens to your new wallet.
+ 3. Check the new wallet on phantom. You should see your SPL token balance.
+ 4. Extend your web app to airdrop some SPL tokens to the wallet given by the user. (Note: this can be done without connecting the actual wallet, remember Airdrop not claim)
+ 
+
