@@ -37,7 +37,7 @@ __Bonus:__
  
 ## 2- Airdrop Solana to wallet
 __Required reading:__
-1. [Send and Recieve Tokens](https://docs.solana.com/cli/transfer-tokens)
+- [Send and Recieve Tokens](https://docs.solana.com/cli/transfer-tokens)
 
 __Tasks:__ 
 1. Use the Solana CLI to airdrop yourself 1 SOL to your file wallet.
@@ -46,9 +46,9 @@ __Tasks:__
 
 ## 3- Solana account and Javascript
 __Required reading:__
- 1. [Solana account model](https://docs.solana.com/developing/programming-model/accounts)
- 2. [Solana account model - Solana Cookbook](https://solanacookbook.com/core-concepts/accounts.html#account-model)
- 3. [Solana Javascript API](https://docs.solana.com/developing/clients/javascript-api#connecting-to-a-wallet)
+ - [Solana account model](https://docs.solana.com/developing/programming-model/accounts)
+ - [Solana account model - Solana Cookbook](https://solanacookbook.com/core-concepts/accounts.html#account-model)
+ - [Solana Javascript API](https://docs.solana.com/developing/clients/javascript-api#connecting-to-a-wallet)
  
  __Tasks:__
  1. Create a web app(NextJS recommended)
@@ -58,8 +58,8 @@ __Required reading:__
 
  ## 3- Solana token program
 __Required reading:__
- 1. [Solana Token Program](https://spl.solana.com/token)
- 2. [Associated Token Account Program](https://spl.solana.com/associated-token-account)
+ - [Solana Token Program](https://spl.solana.com/token)
+ - [Associated Token Account Program](https://spl.solana.com/associated-token-account)
  
  __Tasks:__
  1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
@@ -75,8 +75,8 @@ __Required reading:__
 
  ## 3- Solana token program
 __Required reading:__
- 1. [Solana Token Program] (https://spl.solana.com/token)
- 2. [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
+ - [Solana Token Program] (https://spl.solana.com/token)
+ - [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
  
  __Tasks:__
  1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
@@ -85,5 +85,6 @@ __Required reading:__
  2. Create a transaction to transfer some of your SPL tokens to your new wallet.
  3. Check the new wallet on phantom. You should see your SPL token balance.
  4. Extend your web app to airdrop some SPL tokens to the wallet given by the user. (Note: this can be done without connecting the actual wallet, remember Airdrop not claim)
+
  
 
