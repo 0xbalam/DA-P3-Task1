@@ -29,21 +29,26 @@ On __Phantom__ wallet.
 ___Required reading:__ [File System Wallet] (https://docs.solana.com/wallet-guide/file-system-wallet)
 __Tasks:__
 1. Use the Solana CLI to create a file wallet.
+
 __Bonus:__
 1.Import the file wallet to Phantom wallet.
+ 
  
 ## 2- Airdrop Solana to wallet
 __Required reading:__
 1. [Send and Recieve Tokens] (https://docs.solana.com/cli/transfer-tokens)
+
 __Tasks:__ 
 1. Use the Solana CLI to airdrop yourself 1 SOL to your file wallet.
 2. Familiarize yourself with a transaction explorer. Track your airdrop transaction using [Solana explorer](https://explorer.solana.com/) or [SolanaFM](https://solana.fm/)
+
 
 ## 3- Solana account and Javascript
 __Required reading:__
  1. [Solana account model] (https://docs.solana.com/developing/programming-model/accounts)
  2. [Solana account model - Solana Cookbook] (https://solanacookbook.com/core-concepts/accounts.html#account-model)
  3. [Solana Javascript API] (https://docs.solana.com/developing/clients/javascript-api#connecting-to-a-wallet)
+ 
  __Tasks:__
  1. Create a web app(NextJS recommended)
  2. Using the Solana Javascript API connect to your file wallet.
@@ -54,6 +59,7 @@ __Required reading:__
 __Required reading:__
  1. [Solana Token Program] (https://spl.solana.com/token)
  2. [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
+ 
  __Tasks:__
  1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
  Note: The SPL token can be created using the CLI too, but we want to do this programatically.
@@ -65,10 +71,12 @@ __Required reading:__
  Note: this can be done without connecting the actual wallet, remember Airdrop not claim
  6. Familiarize yourself with a transaction explorer. Track your airdrop transaction using [Solana explorer](https://explorer.solana.com/) or [SolanaFM](https://solana.fm/)
 
+
  ## 3- Solana token program
 __Required reading:__
  1. [Solana Token Program] (https://spl.solana.com/token)
  2. [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
+ 
  __Tasks:__
  1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
  Note: The SPL token can be created using the CLI too, but we want to do this programatically.
