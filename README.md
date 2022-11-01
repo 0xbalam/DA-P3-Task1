@@ -71,20 +71,5 @@ __Required reading:__
  5. Extend your web app to airdrop some SPL tokens to a wallet given by the user. 
  Note: this can be done without connecting the actual wallet, remember Airdrop not claim
  6. Familiarize yourself with a transaction explorer. Track your airdrop transaction using [Solana explorer](https://explorer.solana.com/) or [SolanaFM](https://solana.fm/)
-
-
- ## 3- Solana token program
-__Required reading:__
- - [Solana Token Program] (https://spl.solana.com/token)
- - [Associated Token Account Program] (https://spl.solana.com/associated-token-account)
- 
- __Tasks:__
- 1. Create your own SPL token using the Javascript API, use your file wallet as the payer account. Keep track of the new Associated Token Account
- Note: The SPL token can be created using the CLI too, but we want to do this programatically.
- 2. Create new wallet, this can be used phantom or it can be another file wallet.
- 2. Create a transaction to transfer some of your SPL tokens to your new wallet.
- 3. Check the new wallet on phantom. You should see your SPL token balance.
- 4. Extend your web app to airdrop some SPL tokens to the wallet given by the user. (Note: this can be done without connecting the actual wallet, remember Airdrop not claim)
-
  
 
